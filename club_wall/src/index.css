@@ -13,3 +13,19 @@ body {
 .font-display {
   font-family: 'Playfair Display', serif;
 }
+
+/* 隐藏滚动条但保持滚动功能 */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 拖动时禁止选中文本 */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
